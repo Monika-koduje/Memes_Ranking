@@ -1,4 +1,4 @@
-# Memes-Ranking
+# Memes Ranking
 
 Project is created with:
 
