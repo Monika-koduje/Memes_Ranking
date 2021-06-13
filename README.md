@@ -1,6 +1,6 @@
 # Memes Ranking
 
-Project ##https://monika-koduje.github.io/Memes_Ranking/ is created with:
+Project ----> https://monika-koduje.github.io/Memes_Ranking/ <----- is created with:
 
     CSS3
     HTML5
