@@ -1,3 +1,44 @@
+# Memes-Ranking
+
+Project is created with:
+
+    CSS3
+    HTML5
+    React
+    JavaScript
+
+for WSB studies, specialization Frontend Developer with Angular
+
+
+
+
+
+Source: 
+
+https://fonts.google.com/specimen/Lato
+
+https://favicon.io/favicon-converter/
+
+https://pixabay.com/pl/
+
+https://kit.fontawesome.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
