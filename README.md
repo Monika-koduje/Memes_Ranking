@@ -1,6 +1,6 @@
 # Memes Ranking
 
-Project  ----> https://monika-koduje.github.io/Memes_Ranking/ <-----  is created with:
+Project  -> [HERE](https://monika-koduje.github.io/Memes_Ranking/) <-  is created with:
 
     CSS3
     HTML5
@@ -46,7 +46,7 @@ https://kit.fontawesome.com/
 
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
