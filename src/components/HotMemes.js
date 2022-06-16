@@ -12,7 +12,8 @@ const HotMemes = (props) => {
       meme={meme}
       upVotesCounter={props.upVotesCounter}
       downVotesCounter={props.downVotesCounter}
-      clickMeme={props.clickMeme}
+      clickMemeTrue={props.clickMemeTrue}
+      clickMemeFalse={props.clickMemeFalse}
     />
   ));
 

@@ -3,6 +3,7 @@ import "./App.css";
 import NavRanking from "./NavRanking";
 import HotMemes from "./HotMemes";
 import RegularMemes from "./RegularMemes";
+import FavouriteMemes from "./FavouriteMemes";
 import MainPage from "./MainPage";
 import Error404 from "./Error404";
 import { BrowserRouter, Switch, Redirect, Route, Link } from "react-router-dom";
@@ -44,6 +45,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 2,
@@ -54,6 +56,8 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
+        
       },
       {
         id: 3,
@@ -64,6 +68,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 4,
@@ -71,9 +76,10 @@ class App extends Component {
         upvotes: 0,
         downvotes: 0,
         img: meme_4,
-        star: <i className="far fa-star star"></i>,
+        star: <i className="far fa-star star"></i>,        
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 5,
@@ -81,9 +87,10 @@ class App extends Component {
         upvotes: 40,
         downvotes: -1,
         img: meme_5,
-        star: <i className="far fa-star star"></i>,
+        star:  <i className="far fa-star star"></i>,       
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 6,
@@ -94,6 +101,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 7,
@@ -104,6 +112,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 8,
@@ -114,6 +123,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 9,
@@ -124,6 +134,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 10,
@@ -134,6 +145,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 11,
@@ -144,6 +156,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 12,
@@ -154,6 +167,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 13,
@@ -161,9 +175,10 @@ class App extends Component {
         upvotes: 3,
         downvotes: -20,
         img: meme_13,
-        star: <i className="far fa-star star"></i>,
+        star: <i  className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 14,
@@ -174,6 +189,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 15,
@@ -184,6 +200,7 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
       {
         id: 16,
@@ -194,8 +211,13 @@ class App extends Component {
         star: <i className="far fa-star star"></i>,
         click: false,
         favourite: false,
+        cross: <i style={{ color: "red" }} className="far fa-star star"></i>,
       },
+
     ],
+
+ 
+ 
   };
 
   downVotesCounter = (id) => {
@@ -204,7 +226,7 @@ class App extends Component {
       if (meme.id === id) {
         meme.downvotes = meme.downvotes - 1;
         meme.click = true;
-      }
+      } 
     });
     this.setState({ memesAll });
   };
@@ -220,15 +242,36 @@ class App extends Component {
     this.setState({ memesAll });
   };
 
-  clickMeme = (id) => {
+ 
+  clickMemeTrue = (id) => {
     let memesAll = [...this.state.memesAll];
     memesAll.forEach((meme) => {
       if (meme.id === id) {
         meme.favourite = true;
       }
-    });
+   
+     });
+
     this.setState({ memesAll });
   };
+
+  
+  clickMemeFalse = (id) => {
+    let memesAll = [...this.state.memesAll];
+    memesAll.forEach((meme) => {
+      if (meme.id === id) {
+        meme.favourite = false;
+      }
+   
+     });
+
+    this.setState({ memesAll });
+  };
+
+
+
+
+
 
   render() {
     return (
@@ -249,7 +292,8 @@ class App extends Component {
                     memesAll={this.state.memesAll}
                     upVotesCounter={this.upVotesCounter}
                     downVotesCounter={this.downVotesCounter}
-                    clickMeme={this.clickMeme}
+                    clickMemeTrue={this.clickMemeTrue}
+                    clickMemeFalse={this.clickMemeFalse}
                   />
                 </Route>
                 <Route exact path="/">
@@ -258,7 +302,9 @@ class App extends Component {
                     memesAll={this.state.memesAll}
                     upVotesCounter={this.upVotesCounter}
                     downVotesCounter={this.downVotesCounter}
-                    clickMeme={this.clickMeme}
+                    clickMemeTrue={this.clickMemeTrue}
+                    clickMemeFalse={this.clickMemeFalse}
+
                   />
                 </Route>
                 <Route path="/regular">
@@ -266,7 +312,17 @@ class App extends Component {
                     memesAll={this.state.memesAll}
                     upVotesCounter={this.upVotesCounter}
                     downVotesCounter={this.downVotesCounter}
-                    clickMeme={this.clickMeme}
+                    clickMemeTrue={this.clickMemeTrue}
+                    clickMemeFalse={this.clickMemeFalse}
+                  />
+                </Route>
+                <Route path="/favourite">
+                  <FavouriteMemes
+                    memesAll={this.state.memesAll}
+                    upVotesCounter={this.upVotesCounter}
+                    downVotesCounter={this.downVotesCounter}
+                    clickMemeTrue={this.clickMemeTrue}
+                    clickMemeFalse={this.clickMemeFalse}
                   />
                 </Route>
                 <Route path="*">
@@ -276,7 +332,7 @@ class App extends Component {
             </div>
           </BrowserRouter>
           <footer>
-            <p>Copyright © 2021</p>
+            <p>Copyright © 2021 - 2022</p>
           </footer>
         </div>
       </>

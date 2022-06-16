@@ -5,7 +5,7 @@ const Meme = (props) => {
     color: "gold",
   };
 
-  const { title, img, upvotes, downvotes, id, star, click, favourite } =
+  const { title, img, upvotes, downvotes, id, star, click, favourite, cross} =
     props.meme;
 
   return (
@@ -13,18 +13,27 @@ const Meme = (props) => {
       <div className="titleStar">
         <h3>{title}</h3>
         <button
-          style={favourite === true ? changeStar : null}
-          className="star"
-          onClick={() => props.clickMeme(id)}
+
+        style={favourite === true ? changeStar : null}
+        className="starGold"
+        onClick={() => props.clickMemeTrue(id)}
         >
           {star}
+
+        </button>
+        <button
+        className="starRed"
+        onClick={() => props.clickMemeFalse(id)}
+          >
+          {cross}
+
         </button>
       </div>
       <hr />
       <img className="memeImg" src={img} alt="meme"></img>
       <hr />
       <button
-        disabled={click === true ? true : false}
+        disabled={click}
         className="upBtn"
         onClick={() => props.upVotesCounter(id)}
       >
@@ -32,7 +41,7 @@ const Meme = (props) => {
         <div className="vote">{upvotes}</div>
       </button>
       <button
-        disabled={click === true ? true : false}
+        disabled={click}
         className="downBtn"
         onClick={() => props.downVotesCounter(id)}
       >
