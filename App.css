@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap");
+
+:root {
+  background-color: #ddd;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  z-index: 0;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16%;
+  background-color: #333;
+  box-shadow: 0 0 4px rgb(95, 79, 79);
+  z-index: 10;
+}
+
+p.memes {
+  position: absolute;
+  top: -16%;
+  left: 17%;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.logoImg {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  height: 80%;
+  border-radius: 3vh;
+  transition: 0.5s;
+}
+
+.logoImg:hover {
+  transform: rotateY(180deg);
+}
+
+ul li.hot {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+}
+
+ul li.regular {
+  position: absolute;
+  top: 39%;
+  left: 66%;
+}
+
+ul li.favourite {
+  position: absolute;
+  top: 39%;
+  left: 84%;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 2px 0 0 70px;
+  font-size: 20px;
+}
+
+.nav li,
+.nav a {
+  transition: 0.3s;
+}
+
+.nav li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav li a:hover {
+  background-color: #333;
+  color: #ddd;
+  border: 5px solid #333;
+  padding: 4px 10px 4px 10px;
+  box-shadow: 0 0 0 5px #ddd, 0 0 0 13px #333;
+}
+
+.pagesPath {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 5vh;
+  font-size: 25px;
+  z-index: 5;
+}
+
+.active {
+  background-color: #333;
+  border: 3px solid #fff;
+  padding: 4px 10px 4px 10px;
+  box-shadow: 0 0 0 8px #333, 0 0 0 13px #fff;
+}
+
+.active i {
+  color: rgb(24, 251, 70);
+}
+
+.active span {
+  color:rgb(251, 236, 24)
+}
+
+.memeBox {
+  border: 54px solid #ddd;
+  text-align: center;
+  background-color: #fff;
+}
+
+.titleStar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+button {
+  height: 11vh;
+  width: 26vh;
+  font-size: 22px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button.starGold {
+  position: relative;
+  top: 1%;
+  left: 15%;
+  background-color: transparent;
+}
+
+button.starRed {
+  position: relative;
+  top: 1%;
+  left: 6%;
+  background-color: transparent;
+}
+
+
+.onOffGoldStyle{
+  color: gold;
+}
+
+.up {
+  color: green;
+}
+
+.down {
+  color: red;
+}
+
+.upBtn:hover {
+  background-color: lightgreen;
+  color: #000;
+}
+
+.downBtn:hover {
+  background-color: lightsalmon;
+  color: #000;
+}
+
+.memeImg {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+footer {
+  position: fixed;
+  top: 93%;
+  left: 0;
+  background-color: #333;
+  color: #ddd;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  z-index: 10;
+}
+
+footer p {
+  position: relative;
+  top: 0;
+  left: 40%;
+}
