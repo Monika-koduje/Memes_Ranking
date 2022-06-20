@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "25f1bf502f53db4c2092",
-    "url": "/Memes_Ranking/static/css/main.05c2bc98.chunk.css"
+    "revision": "e3bb852c1d2b477ef491",
+    "url": "/Memes_Ranking/static/css/main.d321e211.chunk.css"
   },
   {
-    "revision": "25f1bf502f53db4c2092",
-    "url": "/Memes_Ranking/static/js/main.2442eeec.chunk.js"
+    "revision": "e3bb852c1d2b477ef491",
+    "url": "/Memes_Ranking/static/js/main.35046e93.chunk.js"
   },
   {
     "revision": "5a8f8649ba3548256540",
     "url": "/Memes_Ranking/static/js/runtime~main.a798fcdd.js"
   },
   {
-    "revision": "da940664d6daff497c68",
-    "url": "/Memes_Ranking/static/js/2.baafa6a8.chunk.js"
+    "revision": "14ffdd2a3bd0a42fa71e",
+    "url": "/Memes_Ranking/static/js/2.1367165d.chunk.js"
   },
   {
     "revision": "e13bfb62faeb205288bb35a062da66ee",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/Memes_Ranking/static/media/meme_16.1029da2d.png"
   },
   {
-    "revision": "a58e5a17116ec59c266c4aa7c623de5c",
+    "revision": "0aab1efd202c1de834914f1692a92c70",
     "url": "/Memes_Ranking/index.html"
   }
 ];
