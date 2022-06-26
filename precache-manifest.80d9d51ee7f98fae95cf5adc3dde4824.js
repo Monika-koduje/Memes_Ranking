@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "e3bb852c1d2b477ef491",
-    "url": "/Memes_Ranking/static/css/main.d321e211.chunk.css"
+    "revision": "f14c8b106b82c77d598c",
+    "url": "/Memes_Ranking/static/css/main.4b8b5974.chunk.css"
   },
   {
-    "revision": "e3bb852c1d2b477ef491",
+    "revision": "f14c8b106b82c77d598c",
     "url": "/Memes_Ranking/static/js/main.35046e93.chunk.js"
   },
   {
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/Memes_Ranking/static/media/meme_16.1029da2d.png"
   },
   {
-    "revision": "0aab1efd202c1de834914f1692a92c70",
+    "revision": "5d079ed94680daeab3204e21d3e0a195",
     "url": "/Memes_Ranking/index.html"
   }
 ];
