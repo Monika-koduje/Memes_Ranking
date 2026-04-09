@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Memes_Ranking/precache-manifest.80d9d51ee7f98fae95cf5adc3dde4824.js"
+  "/Memes_Ranking/precache-manifest.5a3247c67adc1fc82ff41c8bbe75a5a0.js"
 );
 
 workbox.clientsClaim();
