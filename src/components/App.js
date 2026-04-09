@@ -277,7 +277,7 @@ class App extends Component {
     return (
       <>
         <div className="container">
-          <BrowserRouter>
+          <BrowserRouter basename="/Memes_Ranking/">
             <div className="nav">
               <Link to="/">
                 <img className="logoImg" src={logo} alt="logo"></img>
@@ -297,16 +297,14 @@ class App extends Component {
                   />
                 </Route>
                 <Route exact path="/">
-                  <Redirect to="/" />
                   <MainPage
-                    memesAll={this.state.memesAll}
-                    upVotesCounter={this.upVotesCounter}
-                    downVotesCounter={this.downVotesCounter}
-                    clickMemeTrue={this.clickMemeTrue}
-                    clickMemeFalse={this.clickMemeFalse}
-
-                  />
-                </Route>
+                   memesAll={this.state.memesAll}
+                   upVotesCounter={this.upVotesCounter}
+                   downVotesCounter={this.downVotesCounter}
+                   clickMemeTrue={this.clickMemeTrue}
+                   clickMemeFalse={this.clickMemeFalse}
+                 />
+               </Route>
                 <Route path="/regular">
                   <RegularMemes
                     memesAll={this.state.memesAll}
