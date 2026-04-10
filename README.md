@@ -10,7 +10,7 @@ Project  -> [HERE](https://monika-koduje.github.io/Memes_Ranking/) <-  is create
 for WSB studies, specialization Frontend Developer with Angular
 
 
-
+*Demo project for portfolio purposes. Any resemblance to real companies, brands, or individuals is purely coincidental.
 
 
 Source: 
