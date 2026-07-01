@@ -1,7 +1,9 @@
 # Memes Ranking
 
-Project  -> [HERE](https://monika-koduje.github.io/Memes_Ranking/) <-  is created with:
+## Live Demo:
+[Try the app here](https://monika-koduje.github.io/Memes_Ranking/)
 
+## Technology Stuck:
     CSS3
     HTML5
     React
