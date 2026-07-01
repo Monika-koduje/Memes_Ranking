@@ -3,7 +3,7 @@
 ## Live Demo:
 [Try the app here](https://monika-koduje.github.io/Memes_Ranking/)
 
-## Technology Stuck:
+## Technology Stack:
     CSS3
     HTML5
     React
